@@ -4,7 +4,7 @@ import {
     Product,
 } from '../store/models/Product';
 import {products} from '../constants/products';
-import {createSlice,PayloadAction} from '@reduxjs/toolkit';
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {Cart} from '../store/models/Cart';
 import {Purchase} from '../store/models/Purchase';
 import {Filter} from '../store/models/Filter';
@@ -49,8 +49,6 @@ export const shopSlice = createSlice({
             );
         },
         addToCart: (state, action: PayloadAction<Product>) => {
-
-
             const foundProduct = state.cart.products.find(
                 (product) => product.code === action.payload.code
             );
@@ -94,12 +92,9 @@ export const shopSlice = createSlice({
                 } : item)
             }
 
-
             state.cart.products = state.cart.products.filter(
                 (product: Product) => product.code !== action.payload
             );
-
-
         },
         editProduct: (state, action: PayloadAction<Product>) => {
             state.products = state.products.map((product: Product) =>
@@ -143,7 +138,6 @@ export const shopSlice = createSlice({
                 );
             }
 
-            //
             state.filteredProducts = state.shopProducts;
         },
         removeFilter: (state) => {
