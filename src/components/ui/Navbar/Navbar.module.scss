@@ -1,0 +1,34 @@
+.NavContainer {
+  @apply navbar shadow-lg bg-neutral text-neutral-content px-20 py-0;
+}
+
+.Link {
+  @apply btn btn-ghost btn-sm rounded-btn;
+
+  svg {
+    font-size: 1.5rem;
+  }
+}
+
+.RightNav {
+  @apply flex-none;
+}
+
+.NavItemLogo {
+  @apply flex-none px-2 mx-2;
+  cursor: pointer;
+
+  span {
+    @apply text-lg font-bold;
+    span {
+      @apply text-secondary;
+    }
+  }
+}
+
+.NavItem {
+  @apply flex-1 px-2 mx-2;
+  div {
+    @apply items-stretch hidden lg:flex;
+  }
+}

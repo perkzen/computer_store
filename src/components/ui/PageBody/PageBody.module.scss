@@ -1,0 +1,16 @@
+.Container {
+  @apply flex flex-col min-h-screen;
+  main {
+    @apply mb-auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ContentPadding {
+    padding: 0 6rem;
+  }
+}
+
+.Spacer {
+  @apply h-screen;
+}

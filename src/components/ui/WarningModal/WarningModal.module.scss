@@ -1,0 +1,39 @@
+.Modal {
+  @apply relative my-6 mx-auto max-w-3xl z-10;
+  width: 300px;
+}
+
+.Content {
+  @apply bg-neutral border-0 rounded-lg shadow-lg relative flex flex-col w-full  outline-none focus:outline-none p-2;
+}
+
+.Header {
+  @apply flex items-start justify-between p-5;
+  h3 {
+    @apply text-3xl font-semibold;
+    @apply underline decoration-primary underline-offset-8 decoration-4;
+  }
+}
+
+.Body {
+  @apply relative py-2 px-6 flex-auto;
+}
+
+.ButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  @apply mt-5;
+
+  button {
+    @apply btn;
+  }
+
+  button:last-child {
+    @apply bg-rose-500;
+  }
+
+  button:first-child {
+    @apply mr-5;
+  }
+}

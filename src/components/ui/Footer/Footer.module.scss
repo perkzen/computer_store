@@ -1,0 +1,7 @@
+.Container {
+  @apply p-5 footer bg-primary text-primary-content footer-center;
+
+  p {
+    @apply font-bold;
+  }
+}

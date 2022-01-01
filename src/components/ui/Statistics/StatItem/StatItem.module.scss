@@ -1,0 +1,28 @@
+.Container {
+  width: 300px;
+  min-width: 300px;
+  margin-right: 2rem;
+  @apply card card-bordered bg-neutral shadow shadow-black;
+  @apply text-center;
+
+  .Title {
+    @apply underline decoration-accent underline-offset-8 decoration-4;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Counter {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .Info {
+    align-self: center;
+  }
+}

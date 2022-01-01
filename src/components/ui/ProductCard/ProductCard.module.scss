@@ -1,0 +1,56 @@
+.Container {
+  width: 400px;
+  min-width: 400px;
+  min-height: 640px;
+  @apply card card-bordered bg-neutral shadow shadow-black;
+
+  button {
+    @apply btn btn-primary transition duration-150 ease-in-out;
+    @apply disabled:bg-primary;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .Price {
+    font-weight: bold;
+    font-size: 1.5rem;
+    @apply px-5;
+  }
+
+  .CardBody {
+    @apply card-body;
+  }
+
+  .CardTitle {
+    @apply card-title;
+    div {
+      @apply badge badge-secondary;
+      margin-left: 1rem;
+    }
+  }
+
+  .CardActions {
+    @apply justify-center card-actions px-5 pb-5;
+  }
+
+  .ActionsContainer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-self: flex-end;
+    @apply m-1;
+    .Edit {
+      @apply text-emerald-500 mr-2;
+      @apply hover:cursor-pointer;
+    }
+
+    .Remove {
+      @apply text-rose-500;
+      @apply hover:cursor-pointer;
+    }
+  }
+}

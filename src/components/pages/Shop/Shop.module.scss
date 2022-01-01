@@ -1,0 +1,41 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .SearchBar {
+    align-self: center;
+    @apply p-5;
+  }
+
+  .ShopContainer {
+    display: flex;
+    flex-direction: row;
+
+    .ProductContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 100%;
+      @apply mb-10;
+
+      .Product {
+        @apply py-5 px-5;
+      }
+    }
+  }
+  .EmptyState {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 22%;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 2.5rem;
+    svg {
+      @apply text-yellow-300 mr-2;
+    }
+  }
+}

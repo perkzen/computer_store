@@ -1,0 +1,27 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+
+  .Content {
+    padding: 0 6rem;
+
+    .TopSeller {
+      @apply bg-neutral rounded shadow-lg shadow-secondary mt-10 mb-5 ml-5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 200px;
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+
+    .TopSellersContainer {
+      @apply space-x-2 carousel carousel-center pb-10;
+      width: 100%;
+    }
+  }
+}

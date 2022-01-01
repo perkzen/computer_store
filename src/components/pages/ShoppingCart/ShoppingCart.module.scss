@@ -1,0 +1,36 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    @apply text-center p-5;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .Column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ProductContainer {
+    min-width: 600px;
+  }
+
+  .Empty {
+    min-width: 650px;
+    svg {
+      align-self: center;
+      @apply mr-2 text-red-500;
+    }
+  }
+
+  .Row {
+    display: flex;
+    flex-direction: row;
+  }
+}

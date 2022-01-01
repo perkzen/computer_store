@@ -1,0 +1,17 @@
+.FormControl {
+  @apply form-control;
+  label {
+    @apply label;
+    span {
+      @apply label-text;
+    }
+  }
+
+  input {
+    @apply input input-bordered;
+  }
+
+  small {
+    @apply text-error ml-2 mt-1;
+  }
+}

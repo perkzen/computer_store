@@ -1,0 +1,24 @@
+.Table {
+  @apply border-collapse border border-gray-500 bg-neutral;
+  th {
+    @apply border border-gray-600;
+  }
+  td {
+    @apply border border-gray-700;
+  }
+
+  .Counter {
+    width: 100px;
+  }
+
+  .EmptyTable {
+    height: 350px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    svg {
+      position: absolute;
+      @apply ml-8 mt-2;
+    }
+  }
+}

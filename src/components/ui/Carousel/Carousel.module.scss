@@ -1,0 +1,37 @@
+.Container {
+  @apply w-full carousel;
+
+  .CarouselItem {
+    @apply relative w-full  carousel-item;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .CarouselText {
+      position: absolute;
+      color: #e5eaff;
+      h1 {
+        font-size: 60px;
+        font-weight: 600;
+      }
+
+      p {
+        text-align: center;
+        font-weight: 400;
+      }
+    }
+  }
+
+  img {
+    @apply w-full;
+  }
+
+  .ButtonContainer {
+    @apply absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2;
+    button {
+      @apply btn btn-circle;
+    }
+  }
+}

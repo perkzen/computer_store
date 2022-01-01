@@ -1,0 +1,15 @@
+.Searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  @apply bg-neutral rounded-full my-10;
+  input {
+    width: 500px;
+    height: 24px;
+    padding-left: 1.5rem;
+    @apply input bg-neutral;
+    @apply focus:shadow-none;
+  }
+}

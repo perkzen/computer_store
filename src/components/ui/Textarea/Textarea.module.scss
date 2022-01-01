@@ -1,0 +1,19 @@
+.FormControl {
+  @apply form-control;
+  label {
+    @apply label;
+    span {
+      @apply label-text;
+    }
+  }
+  textarea {
+    @apply textarea h-24 textarea-bordered textarea-primary;
+  }
+
+  .Resizable {
+    @apply resize-none;
+  }
+  small {
+    @apply text-error ml-2 mt-1;
+  }
+}

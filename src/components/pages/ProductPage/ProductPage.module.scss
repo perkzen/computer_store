@@ -1,0 +1,49 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  @apply mt-20;
+
+  .Card {
+    @apply card card-bordered bg-neutral shadow shadow-black;
+  }
+
+  .Column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @apply p-3;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    @apply mb-2;
+  }
+
+  img {
+    @apply object-fill rounded-box;
+    width: 450px;
+    height: 300px;
+  }
+
+  .AddToCartBtn {
+    @apply btn btn-primary mt-5;
+    width: 190px;
+
+    svg {
+      margin-right: 1rem;
+    }
+  }
+
+  .Description {
+    @apply p-2;
+    p {
+      width: 400px;
+    }
+  }
+}

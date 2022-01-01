@@ -1,0 +1,24 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  @apply card card-bordered bg-neutral shadow shadow-black px-5 pb-5 ml-10;
+
+  h2 {
+    @apply underline decoration-primary  decoration-double underline-offset-8 decoration-2;
+  }
+
+  li {
+    @apply my-2;
+    span {
+      font-weight: 600;
+    }
+  }
+  button {
+    @apply w-full btn btn-primary mt-5 disabled:border-primary;
+  }
+}
+
+.Divider {
+  @apply divider;
+}

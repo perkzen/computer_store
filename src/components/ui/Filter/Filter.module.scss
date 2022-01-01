@@ -1,0 +1,54 @@
+.Container {
+  min-width: 250px;
+  max-width: 250px;
+  width: 250px;
+  height: fit-content;
+  @apply bg-neutral rounded shadow shadow-black my-5 mr-5 p-4;
+
+  small {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+      svg {
+        @apply mr-2;
+      }
+    }
+  }
+
+  .Select {
+    @apply select select-bordered select-primary w-full;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    @apply mb-2;
+  }
+  ul {
+    @apply mt-2;
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      font-weight: 500;
+      @apply py-2;
+      input {
+        @apply mr-2;
+      }
+    }
+  }
+
+  .Button {
+    @apply w-full btn btn-primary btn-sm mt-5;
+  }
+
+  .Filter {
+    @apply pb-3;
+  }
+}

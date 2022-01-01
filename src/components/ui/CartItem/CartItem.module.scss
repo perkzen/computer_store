@@ -1,0 +1,49 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  @apply card card-bordered bg-neutral shadow shadow-black mb-5;
+  width: 650px;
+
+  .Row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .Column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @apply ml-5 px-4 pb-4;
+    width: 100%;
+  }
+
+  .RemoveBtn {
+    display: flex;
+    flex-direction: column;
+    @apply ml-5 p-2;
+
+    svg {
+      font-size: 1.2rem;
+      align-self: flex-end;
+      @apply text-rose-500;
+      @apply hover:cursor-pointer;
+    }
+  }
+
+  .Counter {
+    align-self: center;
+    @apply my-2;
+  }
+
+  img {
+    min-width: 250px;
+    width: 250px;
+    height: 200px;
+    @apply object-cover;
+  }
+}

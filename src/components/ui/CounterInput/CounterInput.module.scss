@@ -1,0 +1,36 @@
+.Container {
+  @apply form-control w-full;
+
+  .Input {
+    display: flex;
+    flex-direction: row;
+  }
+
+  input {
+    @apply input input-primary input-bordered bg-neutral text-center focus:shadow-none hover:cursor-default;
+    @apply rounded-r-none rounded-l-none;
+    width: 100px;
+  }
+
+  .Plus {
+    @apply rounded-l-none;
+  }
+
+  .Minus {
+    @apply rounded-r-none;
+  }
+
+  button {
+    @apply btn bg-neutral border-primary;
+    width: 45px;
+  }
+
+  @apply h-10 w-32;
+  input:focus {
+    outline: none !important;
+  }
+
+  button:focus {
+    outline: none !important;
+  }
+}

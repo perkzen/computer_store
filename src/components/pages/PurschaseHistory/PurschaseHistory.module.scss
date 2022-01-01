@@ -1,0 +1,22 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  @apply pt-10;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    @apply text-center;
+  }
+
+  .TableContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @apply mt-5;
+    table {
+      width: 600px;
+    }
+  }
+}

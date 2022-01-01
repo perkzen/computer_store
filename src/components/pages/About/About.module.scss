@@ -1,0 +1,40 @@
+.Container {
+  @apply py-5;
+  h1 {
+    @apply text-center;
+    padding: 1.5rem 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .Highlight {
+    @apply underline decoration-accent underline-offset-8 decoration-4;
+  }
+
+  .Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .Text {
+      width: 1000px;
+    }
+  }
+
+  .PartnersContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @apply pb-5;
+
+    img {
+      @apply rounded-full;
+      width: 200px;
+      height: 200px;
+      margin: 0 1.5rem;
+    }
+  }
+}
