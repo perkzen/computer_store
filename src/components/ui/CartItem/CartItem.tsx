@@ -29,7 +29,7 @@ const CartItem: FC<CartItemProps> = ({ product }) => {
             {product.brand} {product.name}
           </h2>
           <h3>Price: {product.price}$</h3>
-          <CounterInput count={product.amount!} setCount={handleChange} />
+          <CounterInput count={product.amount!} setCount={handleChange} disablePlus={product.amount! >= product.stock} />
         </div>
         <div className={classes.RemoveBtn}>
           <CgRemove onClick={() => dispatch(removeFromCart(product.code))} />

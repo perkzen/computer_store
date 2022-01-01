@@ -22,6 +22,7 @@
 
   button {
     @apply btn bg-neutral border-primary;
+    @apply disabled:border-primary;
     width: 45px;
   }
 

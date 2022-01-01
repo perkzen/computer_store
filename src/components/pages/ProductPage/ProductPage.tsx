@@ -11,7 +11,7 @@ const ProductPage: FC = () => {
   const dispatch = useAppDispatch();
   const product = useAppSelector((state) => state.shop.currentProduct[0]);
   const [amount, setAmount] = useState(1);
-  const [updateStock, setUpateStock] = useState(false);
+  const [updateStock, setUpdateStock] = useState(false);
 
   useEffect(() => {
     dispatch(getProduct(productId!));
@@ -20,7 +20,7 @@ const ProductPage: FC = () => {
 
   const handleAddToCart = () => {
     dispatch(addToCart({ ...product, amount }));
-    setUpateStock(!updateStock);
+    setUpdateStock(!updateStock)
   };
 
   return (
