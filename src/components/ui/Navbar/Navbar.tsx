@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Navbar.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
-import { unprotectedRoutePaths } from '../../../routes';
+import {protectedRoutePaths, unprotectedRoutePaths} from '../../../routes';
 import { FaShoppingCart } from 'react-icons/fa';
 import { RiLoginBoxLine, RiLogoutBoxLine } from 'react-icons/ri';
 import { useDispatch } from 'react-redux';
@@ -35,13 +35,13 @@ const Navbar = () => {
             <>
               <Link
                 className={classes.Link}
-                to={unprotectedRoutePaths.ADD_PRODUCT}
+                to={protectedRoutePaths.ADD_PRODUCT}
               >
                 Add product
               </Link>
               <Link
                 className={classes.Link}
-                to={unprotectedRoutePaths.PURCHASE_HISTORY}
+                to={protectedRoutePaths.PURCHASE_HISTORY}
               >
                 Purchase history
               </Link>

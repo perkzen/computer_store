@@ -1,0 +1,24 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+
+  .Image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    svg {
+      font-size: 6rem;
+      font-weight: 600;
+      @apply mr-2;
+    }
+  }
+
+  h1{
+    font-size: 4rem;
+    font-weight: 600;
+  }
+}

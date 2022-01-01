@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Product } from '../../../store/models/Product';
 import classes from './ProductCard.module.scss';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { unprotectedRoutePaths } from '../../../routes';
+import {protectedRoutePaths, unprotectedRoutePaths} from '../../../routes';
 import { CgRemove } from 'react-icons/cg';
 import { AiFillEdit } from 'react-icons/ai';
 import { useAppDispatch, useAppSelector } from '../../../app/hooks';
@@ -32,7 +32,7 @@ const ProductCard: FC<ProductCardProps> = ({ product, disabled }) => {
                 className={classes.Edit}
                 onClick={() =>
                   navigate(
-                    `${unprotectedRoutePaths.EDIT_PRODUCT}/${product.code}`
+                    `${protectedRoutePaths.EDIT_PRODUCT}/${product.code}`
                   )
                 }
               />
