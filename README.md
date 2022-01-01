@@ -1,6 +1,6 @@
 # Computers.com
 
-This is a online shop for computers and computer parts.
+This is a online sotre where you can buy computers and computer parts. Admin can add and remove products from the shop. This shop has also many featers few of them are filtering items and adding them to the shopping cart. When you go to the shopping cart and click on checkout all perchases will be saved in a table which can be accessed by the admin.
 
 ## Installation
 
@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-installs all necessary node packages for the project.
+Installs all necessary node packages for the project.
 
 ### `npm start`
 
