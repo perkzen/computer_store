@@ -41,7 +41,7 @@ export const products: Product[] = [
     image:
       'https://www.lowyat.net/wp-content/uploads/2020/10/predator-xb3-visioncare-01.jpg',
     name: 'Predator X34',
-    price: 109.99,
+    price: 1099.99,
     type: 'Monitor',
     year: 2021,
     stock: 1,

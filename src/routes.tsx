@@ -13,9 +13,6 @@ export enum unprotectedRoutePaths {
     PRODUCT = '/product',
     SHOP = '/shop',
     ABOUT = '/about-us',
-    // ADD_PRODUCT = '/add-product',
-    // EDIT_PRODUCT = '/edit-product',
-    // PURCHASE_HISTORY = '/purchase-history',
 }
 
 export enum protectedRoutePaths {
@@ -50,18 +47,6 @@ export const unprotectedRoutes: Route[] = [
         path: unprotectedRoutePaths.CHECKOUT,
         element: <ShoppingCart/>,
     },
-    // {
-    //     path: `${unprotectedRoutePaths.EDIT_PRODUCT}/:productId`,
-    //     element: <ProductForm/>,
-    // },
-    // {
-    //     path: unprotectedRoutePaths.ADD_PRODUCT,
-    //     element: <ProductForm/>,
-    // },
-    // {
-    //     path: unprotectedRoutePaths.PURCHASE_HISTORY,
-    //     element: <PurchaseHistory/>,
-    // },
 ];
 
 

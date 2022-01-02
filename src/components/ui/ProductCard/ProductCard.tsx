@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Product } from '../../../store/models/Product';
 import classes from './ProductCard.module.scss';
 import { useLocation, useNavigate } from 'react-router-dom';
-import {protectedRoutePaths, unprotectedRoutePaths} from '../../../routes';
+import { protectedRoutePaths, unprotectedRoutePaths } from '../../../routes';
 import { CgRemove } from 'react-icons/cg';
 import { AiFillEdit } from 'react-icons/ai';
 import { useAppDispatch, useAppSelector } from '../../../app/hooks';
@@ -32,7 +32,7 @@ const ProductCard: FC<ProductCardProps> = ({ product, disabled }) => {
                 className={classes.Edit}
                 onClick={() =>
                   navigate(
-                    `${protectedRoutePaths.EDIT_PRODUCT}/${product.code}`
+                    `${protectedRoutePaths.EDIT_PRODUCT}/${product.code}`,
                   )
                 }
               />
@@ -48,7 +48,7 @@ const ProductCard: FC<ProductCardProps> = ({ product, disabled }) => {
                         dispatch(removeProduct(product.code)),
                       secondaryButtonText: 'Cancel',
                       secondaryButtonAction: () => dispatch(removeModal()),
-                    })
+                    }),
                   )
                 }
               />
@@ -63,7 +63,7 @@ const ProductCard: FC<ProductCardProps> = ({ product, disabled }) => {
       <div className={classes.CardBody}>
         <div>
           <h2 className={classes.CardTitle}>
-            {product.brand} {product.name}
+            <span>{product.brand} {product.name}</span>
             {isHome && <div>HOT</div>}
           </h2>
         </div>
