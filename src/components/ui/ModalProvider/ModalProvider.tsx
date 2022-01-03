@@ -35,22 +35,22 @@ const ModalProvider: FC<ModalProviderProps> = ({ children }) => {
     <>
       {children}
       {open &&
-        createPortal(
-          <div
-            className={classNames({
-              [classes.Backdrop]: true,
-              [classes.BackdropAnimateIn]: open,
-            })}
-            onClick={
-              modal?.onBackdropClose ?? true
-                ? () => dispatch(removeModal())
-                : undefined
-            }
-          >
-            <div className={classes.Container}>{showModalType()}</div>
-          </div>,
-          document.body
-        )}
+      createPortal(
+        <div
+          className={classNames({
+            [classes.Backdrop]: true,
+            [classes.BackdropAnimateIn]: open,
+          })}
+          onClick={
+            modal?.onBackdropClose ?? true
+              ? () => dispatch(removeModal())
+              : undefined
+          }
+        >
+          <div className={classes.Container}>{showModalType()}</div>
+        </div>,
+        document.getElementById('modal')!,
+      )}
     </>
   );
 };
