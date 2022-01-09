@@ -23,7 +23,7 @@ import { addModal } from '../../../features/globalSlice';
 import { ModalType } from '../../../store/models/Modal';
 import { BsCartCheckFill } from 'react-icons/bs';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
-import {protectedRoutePaths, unprotectedRoutePaths} from '../../../routes';
+import { protectedRoutePaths, unprotectedRoutePaths } from '../../../routes';
 import { CgCheckO } from 'react-icons/cg';
 
 interface ProductFormData {
@@ -56,9 +56,9 @@ const ProductForm: FC = () => {
   const navigate = useNavigate();
   const { productId } = useParams();
   const location = useLocation();
-  const isEdit = location.pathname !== protectedRoutePaths.ADD_PRODUCT;
+  const isEdit = location.pathname.includes(protectedRoutePaths.EDIT_PRODUCT);
   const editingProduct = useAppSelector(
-    (state) => state.shop.currentProduct[0]
+    (state) => state.shop.currentProduct[0],
   );
 
   useEffect(() => {
@@ -106,7 +106,7 @@ const ProductForm: FC = () => {
           modalType: ModalType.SUCCESS,
           icon: <BsCartCheckFill />,
           body: 'Product was successfully added to the shop.',
-        })
+        }),
       );
       navigate(unprotectedRoutePaths.SHOP);
     } else {
@@ -114,14 +114,14 @@ const ProductForm: FC = () => {
         editProduct({
           ...data,
           image: image,
-        })
+        }),
       );
       dispatch(
         addModal({
           modalType: ModalType.SUCCESS,
           icon: <CgCheckO />,
           body: 'Product was successfully edited.',
-        })
+        }),
       );
     }
   };
